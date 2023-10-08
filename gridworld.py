@@ -109,16 +109,6 @@ class GridWorld():
                 self.play_action()        
                 print("to", self.state)
                 print("---------------------")
-
-    def showValues(self):
-        # breakpoint()
-        for i in range(0, self.GRID_ROWS):
-            print('----------------------------------')
-            out = '| '
-            for j in range(0, self.GRID_COLS):
-                out += str(self.state_values[(i, j)]).ljust(6) + ' | '
-            print(out)
-        print('----------------------------------')
                 
 if __name__ == "__main__":
     rounds = 50
